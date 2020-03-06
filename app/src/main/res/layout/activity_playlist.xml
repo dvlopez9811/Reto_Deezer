@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    >
+
+
+
+
+
+<ImageView
+    android:scaleType="centerCrop"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ddd"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/imagen_playlist"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagen_playlist"
+        android:padding="20dp">
+
+
+
+    <TextView
+        android:id="@+id/titulo_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="30dp"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descripcion_playlist"
+        android:layout_below="@id/titulo_playlist"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_below="@id/descripcion_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero_canciones"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_below="@id/descripcion_playlist"
+        android:layout_toRightOf="@id/numero_canciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero_fans"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/numero_canciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lista_canciones_playlist_activity"
+        android:layout_marginTop="10dp"
+
+        ></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
